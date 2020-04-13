@@ -165,7 +165,21 @@ public class SAP {
             int ancestor = sap.ancestor(v, w);
             StdOut.printf("length = %d, ancestor = %d\n", length, ancestor);
         }
+        Queue<Integer> v = new Queue<Integer>();
+        v.enqueue(7);
+        v.enqueue(8);
+        v.enqueue(9);
+        v.enqueue(10);
+        Queue<Integer> w = new Queue<Integer>();
+        w.enqueue(13);
+        w.enqueue(14);
+        w.enqueue(0);
+        w.enqueue(12);
 
+
+        int ancestor = sap.ancestor(v, w);
+        int length = sap.length(v, w);
+        StdOut.printf("length = %d, ancestor = %d\n", length, ancestor);
 
     }
 }
